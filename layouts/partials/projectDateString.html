@@ -1,0 +1,5 @@
+{{ if ne . "" }}
+{{ (time .).Month }} {{ (time .).Year }}
+{{ else }}
+today
+{{ end }}

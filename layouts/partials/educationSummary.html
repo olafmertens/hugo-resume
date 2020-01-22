@@ -1,12 +1,10 @@
 <div class="resume-item d-flex flex-column flex-md-row mb-5">
     <div class="resume-content mr-auto">
-        <h3 id="{{.File.BaseFileName}}" class="mb-0">{{ .Title }}</h3>
-        <h4 class="mb-0"><a href="{{.Params.project_url}}">{{ .Params.company }}</a> - {{ .Params.position }}</h4>
-        <p/>
+      <h3 class="mb-0"><a href="{{.Params.school_url}}">{{ .Params.school }}</a></h3>
+        <div class="subheading mb-3">{{ .Params.degree }}</div>
         {{ .Content }}
     </div>
     <div class="resume-date text-md-right">
         <span class="text-primary">{{ partial "projectDate" .Date }} - {{ partial "projectDateString" .Params.end_date }}</span>
     </div>
 </div>
-<div>{{ partial "techtags" . }}</div>
